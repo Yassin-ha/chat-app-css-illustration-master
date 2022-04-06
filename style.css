@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    top: 0;
+    left: -170px;
+    width: 40%;
+    height: 77%;
+    border-radius: 0 0 9999em 9999em;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));;
+    width: 45%;
+    height: 77%;
+    bottom: 0;
+    right: -300px;
+    border-radius: 9999em 9999em 0 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+.phone {
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 3px 10px 35px rgba(0, 0, 0, 0.125);
+}
+.phone .content {
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 20px 20px 2px 2px;
+    display: flex;
+    height: 80px;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+}
+.phone .content::before,
+.phone .content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    height: 20px;
+    width: 70px;
+    
+}
+.phone .content::before {
+    right: 49%;
+    border-radius: 0 0 0 15px;
+}
+.phone .content::after {
+    left: 50%;
+    border-radius: 0 0 15px 0;
+}
+.phone .content .profile {
+    display: flex;
+    align-items: end;
+    position: relative;
+    width: 100%;
+}
+.phone .content .profile::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+}
+.phone .content .profile::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f142";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.phone .content .profile img {
+    max-width: 100%;
+    width: 34px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: 15px;
+    margin-right: 8px;
+}
+.phone .profile .name div {
+    font-size: 12px;
+}
+
+.phone .profile .name span {
+    color: #c1bdbd;
+    font-size: 10px;
+}
+.phone .messages {
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+    border-radius: 0 0 20px 20px;
+}
+.phone .messages .send {
+    color: hsl(276, 55%, 52%);
+    margin-left: 5px;
+}
+.phone .messages .send div {
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #e9e7e7;
+    max-width: 78%;
+    font-size: 10px;
+}
+
+.phone .messages .recieve div:not(:first-child) {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+    color: hsl(271, 15%, 43%);
+    max-width: 75%;
+    font-size: 10px;
+}
+.phone .messages .images {
+    float: right;
+    margin-right: 13px;
+}
+.phone .messages .images img {
+    max-width: 100%;
+    width: 45px;
+    border-radius: 15px;
+    margin-left: 2px;
+}
+.phone .messages .price {
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(276, 55%, 52%));
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    padding: 6px 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 75%;
+}
+.phone .messages .price p {
+    font-size: 10px;
+    color: #e3dfdf;
+    padding-top: 3px;
+}
+.phone .messages .price p::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 300;
+    margin-right: 10px;
+}
+.phone .messages .price span {
+    font-weight: 500;
+}
+.phone .messages .type-message {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 90%;
+    margin: 8px auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.phone .messages .type-message .typing {
+    padding: 8px 10px;
+    color: hsl(270, 7%, 64%);
+    font-size: 10px;
+}
+.phone .messages .type-message .icon {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.phone .messages .type-message .icon i {
+    border-radius: 50%;
+    background-color: hsl(271, 36%, 24%);
+    padding: 4px 8px;
+    color: #fff;
+}
+.text {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+.text p {
+    line-height: 1.6;
+    color: hsl(270, 7%, 64%);
+}
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 70px;
+        gap: 60px;
+        
+    }
+    body::before {
+        left: 0;
+        width: 50%;
+        height: 88%;
+        border-radius: 0 0 9999em 0;
+    }
+    .container::after {
+        right: 0;
+        height: 45%;
+        width: 50%;
+        border-radius: 9999em 0 0 0;
+    }
+    .text {
+        max-width: 100%;
+        padding: 0 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
