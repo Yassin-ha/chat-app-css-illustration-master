@@ -5,7 +5,6 @@
 }
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: hsl(270, 20%, 96%);
 }
 
 .container {
@@ -15,27 +14,26 @@ body {
     gap: 100px;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 60px;
     overflow: hidden;
 }
 
 body::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    background-color: hsl(264, 100%, 61%);
     top: 0;
     left: -170px;
     width: 40%;
-    height: 77%;
+    height: 80%;
     border-radius: 0 0 9999em 9999em;
 }
 .container::after {
     content: "";
     position: absolute;
-    background-image: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));;
+    background-color: hsl(270deg 5% 83%);
     width: 45%;
-    height: 77%;
+    height: 80%;
     bottom: 0;
     right: -300px;
     border-radius: 9999em 9999em 0 0;
@@ -53,9 +51,9 @@ body::before {
     background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: 20px 20px 2px 2px;
     display: flex;
-    height: 80px;
+    height: 65px;
     color: #fff;
-    padding: 15px;
+    padding: 5px 15px;
     position: relative;
 }
 .phone .content::before,
@@ -64,17 +62,17 @@ body::before {
     position: absolute;
     top: 0;
     background-color: #fff;
-    height: 20px;
+    height: 15px;
     width: 70px;
     
 }
 .phone .content::before {
     right: 49%;
-    border-radius: 0 0 0 15px;
+    border-radius: 0 0 0 10px;
 }
 .phone .content::after {
     left: 50%;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 10px 0;
 }
 .phone .content .profile {
     display: flex;
@@ -86,6 +84,7 @@ body::before {
     font-family: "Font Awesome 5 Free";
     content: "\f104";
     font-weight: 900;
+    font-size: 12px;
     position: absolute;
     top: 50%;
 }
@@ -93,15 +92,17 @@ body::before {
     font-family: "Font Awesome 5 Free";
     content: "\f142";
     font-weight: 900;
+    font-size: 12px;
     position: absolute;
     right: 0;
     top: 50%;
 }
 .phone .content .profile img {
     max-width: 100%;
-    width: 34px;
+    width: 30px;
     border-radius: 50%;
     border: 2px solid #fff;
+    margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 8px;
 }
