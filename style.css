@@ -12,17 +12,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 140px;
     position: relative;
     min-height: 100vh;
-    padding-left: 70px;
+    padding-left: 80px;
     overflow: hidden;
 }
 
 body::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(hsl(294deg 49% 55%) 60%, hsl(264, 100%, 61%))  ;
+    background-image: linear-gradient(hsl(282deg 100% 62%) 60%, hsl(264, 100%, 61%))  ;
     top: 0;
     left: -170px;
     width: 40%;
@@ -52,9 +52,9 @@ body::before {
     background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: 20px 20px 2px 2px;
     display: flex;
-    height: 65px;
+    height: 70px;
     color: #fff;
-    padding: 5px 15px;
+    padding: 8px 15px;
     position: relative;
 }
 .phone .content::before,
@@ -185,7 +185,7 @@ body::before {
     justify-content: space-between;
     height: 30px;
     width: 90%;
-    margin: 8px auto;
+    margin: 10px auto;
     background-color: #fff;
     border-radius: 15px;
 }
